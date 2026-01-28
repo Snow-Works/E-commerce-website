@@ -1,0 +1,722 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.navbar {
+    display:flex;
+    align-items: center;
+    padding:20px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align:right;
+}
+
+nav ul {
+    display:inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin:20px;
+
+}
+
+a {
+    text-decoration:none;
+    color:black;
+}
+
+p{
+    color:black;
+    line-height: 20px;
+    font-weight: 400px;
+}
+
+small {
+    font-weight: 900px;
+    color: black;
+}
+ 
+
+h1 {
+    font-weight: 400px;
+}
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+.row {
+    display:flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    cursor: pointer;
+}
+
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn {
+
+    display:inline-block;
+    background: #1630a8;
+    color:white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+
+}
+
+.btn:hover {
+    background-color:white;
+    color:black;
+    cursor: pointer;
+}
+
+.header {
+    background: radial-gradient( rgb(218, 218, 228),rgb(2, 2, 107));
+}
+
+.header .row {
+    margin-top: 70px;
+
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 23%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    transition: transform 0.6s;
+    cursor: pointer;
+}
+
+.col-3:hover {
+    transform:translateX(-8px);
+}
+
+.col-3 img {
+    width: 120%
+}
+
+
+.small-container {
+    max-width: 1080px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 30px;
+    transition: transform 0.6s;
+    cursor: pointer;
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: black;
+}
+
+
+.title::after{
+    content: '';
+    background: rgb(2, 2, 107);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    transform: translateX(-50);
+}
+
+h4 {
+    color: black;
+    font-weight: 700;
+}
+
+.col-4 p {
+    font-size: 16px;
+    color:black;
+}
+
+.rating .fa {
+    color: goldenrod;
+}
+
+
+.col-4:hover {
+ transform: translateY(-8px);
+}
+
+
+/* Buy button section*/
+
+
+.btn1{
+    background-color: rgb(21, 6, 107);
+    line-height: 35px;
+    color: white;
+    border-radius: 25px;
+    padding: 5px 8px 5px 8px;
+    padding-top: 5px;
+
+}
+
+.btn2 {
+    background-color: rgb(35, 184, 15);
+    line-height: 35px;
+    color: white;
+    border-radius: 25px;
+    padding: 5px 8px 5px 8px;
+    padding-top: 5px;
+    
+    
+
+}
+
+.btn1:hover {
+    background-color: rgb(12, 2, 71);
+    transform: scale(1.1);
+    cursor: grab;
+
+}
+
+.btn2:hover {
+    background-color:  rgb(13, 82, 4);
+    transform: scale(1.1);
+    cursor: grab;
+
+}
+
+#img-bro {
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+}
+
+
+/*offer section */
+
+.offer {
+    background: radial-gradient( rgb(218, 218, 228),rgb(2, 2, 107));
+    margin-top: 80px;
+    padding: 30px 0;
+    max-width: 100%;
+}
+
+.col-2 .offer-img {
+    padding: 40px;
+}
+
+
+/*testimonial section */
+
+.testimonial {
+padding-top: 100px;
+
+}
+
+.testimonial .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow:rgb(2, 2, 22);
+    cursor: pointer;
+    transition: transform 0.6s;
+    background-color: rgb(173, 173, 216);
+    
+}
+
+.testimonial .col-3 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 80%;
+}
+
+.testimonial .col-3:hover {
+    transform:translateY(-8px);
+}
+
+.col-3 p {
+    font-size: 12px;
+    margin: 20px;
+}
+
+.testimonial .col-3 h3 {
+    font-weight: 600;
+    color: black;
+}
+
+/*brands section*/
+
+.brands {
+    margin: 100px auto;
+}
+
+.col-5 {
+    width: 160px;
+}
+
+.col-5 img {
+    cursor: pointer;
+    width: 100%;
+    filter : grayscale(90%)
+}
+
+.col-5 img:hover {
+    filter: grayscale(0);
+    cursor:pointer;
+}
+
+/*----fooeter----*/
+
+.footer {
+    background: rgb(0, 0, 5);
+    color: white;
+    font-size: 15px;
+    padding: 60px 0 20px;
+    width: 100%;
+    
+}
+
+.para {
+    color: white;
+}
+
+.footer p {
+    color: white;
+
+}
+
+.footer h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+
+    min-width: 250px;
+    margin-bottom: 20px;
+
+
+}
+
+.footer-col-1 {
+    flex-basis: 100%;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4 {
+    flex-basis: 12%; 
+    text-align: center;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+}
+
+
+.app-logo {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.app-logo img {
+    display: flex;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.app-logo img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.footer hr {
+    border: none;
+    height: 1px;
+    background-color: white;
+    margin: 10px 0;
+}
+
+.footer-logo-img {
+    color: white;
+    image-resolution: inherit;
+    background-color: antiquewhite;
+    height: 60px;
+    width: 30px;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.menu-icon {
+    width: 28px;
+    color: white;
+    cursor: pointer;
+    margin-left:  20px;
+    display: none;
+}
+
+/* all products page */
+
+.row-2 {
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+
+/* all products details page */
+
+.col-2 {
+    padding-left: 27px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    flex-basis: 24%;
+}
+
+
+
+
+/* page btn under all products page */
+
+
+.page-btn {
+    margin: 30 auto 60px;
+}
+
+.page-btn span {
+    display: inline-block;
+    border: 1px solid gold;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    
+}
+
+.page-btn span:hover {
+    background: rgb(2, 2, 107);
+    color: #ffff;
+}
+
+
+
+
+/*------ cart items details styling---*/
+
+.cart-page {
+    margin: 90px auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse:collapse;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: rgb(2, 2, 107);
+    font-weight: normal;
+}
+
+td {
+    padding: 10px 5px;
+}
+
+td input {
+    height: 30px;
+    width: 90px;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+td a {
+    color: rgb(2, 2, 107);
+    font-size: 12px;
+}
+
+.totalprice {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+
+}
+
+.totalprice table {
+    border-top: 5px solid rgb(2, 2, 107);
+    width: 100%;
+    max-width: 400px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+
+
+
+/*-----styling for accounts log in and sign up---*/
+
+.account-page {
+    padding: 50px 0;
+    background: radial-gradient( rgb(218, 218, 228),rgb(2, 2, 107));
+}
+
+.form-container {
+    background: #ffff;
+    width: 350px;
+    height: 450px;
+    position: relative;
+    text-align: center;
+    padding: 17px 0;
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 20px 0px rgb(1, 1, 34);
+
+}
+
+
+
+.form-container a{
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+    color:black;
+    cursor: pointer;
+    width: 150px;
+    display: inline block;
+}
+
+.form-btn {
+    display: inline-block;
+    
+}
+
+.form-container form {
+    max-width: 300px;
+    padding: 0 25px;
+    position: absolute;
+    top: 70px;
+    transition: transform 1s;
+
+
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0 0 10px;
+    padding: 0 10px;
+    border-radius: 9px;
+    box-shadow: none;
+    border:2px solid rgb(18, 18, 77);
+ 
+
+}
+
+
+
+
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0 0 10px;
+}
+
+
+form .btn:focus {
+    outline:none;
+}
+
+
+
+#loginForm {
+    align-items: center;
+    margin-top: 60px;
+    
+}
+
+#regForm {
+    left: 0;
+}
+
+form a {
+    font-size: 12px;
+    color:aliceblue;
+}
+
+
+
+
+
+
+/* media query for menu icon  */
+
+@media only screen and (max-width: 1000px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #aeaed8;
+        width: 100%;
+        color: white;
+        margin-top: 40px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+
+nav ul li a  {
+color: black;
+}
+
+.menu-icon {
+    display: block;}
+
+
+    nav ul li a:hover {
+        transform: scale(2.2);
+        background-color:rgb(23, 23, 180);
+    }
+
+}
+
+
+
+
+/* media query for screen less than 1000 screen size */
+
+@media only screen and (max-width: 1000px) {
+    .row {
+        text-align: center;
+    }
+
+    .col-2, .col-3.app-log, .col-4 {
+        flex-basis: 100%;
+    }
+
+    .single-product .row  {
+        text-align: left;
+        
+        
+
+    }
+
+     
+
+    .single-product  .col-2 {
+        padding: 20px 0;
+        
+    }
+
+    #img-hun {
+        height: 100%;
+    }
+
+    .single-product h1 {
+        font-size: 35px;
+        line-height: 28px;
+    }
+
+    .cart-info p {
+        
+
+    }
+
+    .totalprice table {
+        width: 100%;
+    }
+
+}

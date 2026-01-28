@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+
+<style>
+    @media only screen and (max-width: 1000px) {
+        .img-wan {
+            height: 520px;
+        }
+    }
+    
+    .slct {
+        background:rgb(12, 5, 114);
+        color:#fff;
+        border: 1px solid gold;
+        border-radius: 25px;
+        padding: 5px;
+    }
+
+    .slct:hover {
+        cursor:pointer;
+        transform:scale(1.05);
+        box-shadow: 3px solid gold;
+    }
+
+    .slct:focus {
+        outline:none;
+    }
+
+    
+    
+</style>
+
+<body>
+    
+       <div class="container">
+           <div class="navbar">
+               <div class="logo">
+                 <img src="images/BackgroundEraser_20250915_021236834.png" width="120px" height="120px">
+                </div>
+                <nav>
+                       <ul id="menuItems">
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="productdetails.html">Product</a></li>
+                           <li><a href="#">About</a></li>
+                           <li><a href="#">Contact</a></li>
+                           <li><a href="login form.html">Account</a></li>
+                        </ul>
+               </nav>
+               <img src="./images/cart icon 2.webp" width="20px" height="20px">
+               <img src="images/MyPhoto_10_31_2025_1_13_08_PM.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+
+
+
+        
+        <!------single product details----->
+
+
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/car 9.avif" width="100%" id=" productImg">
+
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/car 9.avif " width="100%" class="smallImg">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/car 12.avif" width="100%" class="smallImg" >
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/car 11.avif" width="100%" height="100%" class="smallImg" >
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/car 10.avif" width="100%"  height="100%" class="smallImg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p>Blue Lock</p>
+                    <h1>BMW B78 (clover)</h1>
+                    <h4>$900,000.00</h4>
+                    <select class="slct">
+                        <option>Select Color</option>
+                        <option>Black</option>
+                        <option>Red</option>
+                        <option>White</option>
+                        <option>Grey</option>
+                        <option>Orange</option>
+                        <option>Green</option>
+                        <option>Gold</option>
+                        <option>Purple</option>
+                        <option>Coral</option>
+                        <option>Ash</option>
+                    </select>
+                    <input type="number"  placeholder="How many?">
+                    <a href="#" class="btn2"> Add to cart</a>
+                    <h3>Product detail <i class="fa fa-indent"></i></h3> 
+                    <p>Experience pure performance and class with this BMW — sleek design, powerful engine, and premium comfort. Perfect condition, well-maintained, and ready to hit the road.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!------ featured products title----->
+
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <p><a href="product.html" draggable="true" style="font-weight: 600; transform: scale(1.08); text-decoration:underline;" >View More</a></p>
+
+            </div>
+        </div>
+
+
+
+
+
+
+   
+
+    <!------ featured products----->
+    
+    <div class="small-container">
+       
+        <div class="row">
+            <div class="col-4">
+                <img src="images/car 11.avif" id="img-hun">
+                <h4>Blue-Cone XV</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$900.00</p>
+                <a href="product.html" class="btn1">Explore ! &#8594;</a>
+            </div>
+
+            <div class="col-4">
+                <img src="images/cars-8891625_640.jpg" height="420px" id="img-hun">
+                <h4>Bentley 076 White</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$500,000.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+
+            <div class="col-4">
+                <img src="images/car 2.1 a.avif" height="420px" id="img-hun">
+                <h4>Rolls Royce B70 </h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$900,000.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+
+            <div class="col-4">
+                <img src="images/car 55.avif" height="420px" id="img-hun">
+                <h4>Bunkloy (890)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$700,000.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+            
+        </div>
+
+         
+
+        
+       
+
+
+
+
+    </div>
+
+
+    
+
+    <!------ footer ----->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p class="para">Download our app for the best shopping experience.</p>
+                    <div class="app-logo">
+                        <a href=""><img src="images/MyPhoto_10_31_2025_11_40_31_AM.png" with="60px" height="60px"></a>
+                        <p>Download on playstore</p>
+                        <a href=""><img src="images/download.webp" width="70px" height="50px"></a>
+                        <p>Download on app-store</p>
+                    </div>
+
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/BackgroundEraser_20250915_021236834.png" width="120px" height="120px" class="footer-logo-img">
+                    <p class="para">Our purpose is to sustainably make the pleasure and benefits of 
+                        car ownership accessible to the many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post Content</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebok</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Linkedin</li>
+                    </ul>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2025 - Splendor Global</p>
+                <hr>
+                <p class="copyright">Built by SNOW WORKS</p>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!--------JavaScript for toggle menu------>
+
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menuItems.style.maxHeight == "0px")
+            {
+                menuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                menuItems.style.maxHeight = "0px";
+            }
+        }   
+    </script>
+
+
+<!--------JavaScript for products detail page ------>
+
+<script>
+    var productImg = document.getElementById(" productImg")
+    var smallImg = document.getElementsByClassName("smallImg")
+
+    smallImg[0].onclick = function() {
+        productImg.src = smallImg[0].src;
+
+    }
+
+    smallImg[1].onclick = function() {
+        productImg.src = smallImg[1].src;
+
+    }
+
+    smallImg[2].onclick = function() {
+        productImg.src = smallImg[2].src;
+
+    }
+    
+
+    smallImg[3].onclick = function() {
+        productImg.src = smallImg[3].src;
+
+    }
+
+    smallImg[4].onclick = function() {
+        productImg.src = smallImg[4].src;
+
+    }
+</script>
+
+    
+
+    
+
+
+    
+</body>
+</html>

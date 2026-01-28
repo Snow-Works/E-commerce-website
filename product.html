@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product INC.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+
+<style>
+    @media only screen and (max-width: 1000px) {
+        .img-wan {
+            height: 520px;
+        }
+    }
+    
+    .slct {
+        background:rgb(12, 5, 114);
+        color:#fff;
+        border: 1px solid gold;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .slct:hover {
+        cursor:pointer;
+        transform:scale(1.05);
+        box-shadow: 3px solid gold;
+    }
+
+    .slct:focus {
+        outline:none;
+    }
+
+    
+    
+</style>
+
+<body>
+    
+       <div class="container">
+           <div class="navbar">
+               <div class="logo">
+                 <img src="images/BackgroundEraser_20250915_021236834.png" width="120px" height="120px">
+                </div>
+                <nav>
+                       <ul id="menuItems">
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="product.html">Product</a></li>
+                           <li><a href="productdetails.html">About</a></li>
+                           <li><a href="#">Contact</a></li>
+                           <li><a href="register.html">Account</a></li>
+                        </ul>
+               </nav>
+               <a href="cart.html"><img src="./images/cart icon 2.webp" width="20px" height="20px"></a>
+               <a href="index1.html"><img src="images/MyPhoto_10_31_2025_1_13_08_PM.png" class="menu-icon" onclick="menutoggle()"></a>
+            </div>
+        </div>
+
+    
+
+   
+
+    <!------ featured products----->
+    
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Our Products Kinds</h2>
+            <select class="slct">
+                <option>Sorting by </option>
+                <option>sort by price &#9989;</option>
+                <option>Sort by popularity &#9989;</option>
+                <option>sort by sale &#9989;</option>
+            </select>
+        </div>
+         <div class="row">
+            <div class="col-4">
+                <img src="images/watches-73936_640.jpg">
+                <h4>INIVICIA Rollex Pack</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$86.44</p>
+                <a href="product.html" class="btn1">Explore ! &#8594;</a>
+            </div>
+
+            <div class="col-4">
+                <img src="images/wrist watch.avif" height="420px">
+                <h4>Montblanc (black)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$75.99</p>
+                <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
+                <a href="product.html" class="btn2">Explore ! &#8594;</a>
+                
+            </div>
+
+            <div class="col-4">
+                <img src="images/wrist watch 3.avif" height="420px">
+                <h4>Biz Rollex (silver plated)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$96.00</p>
+                <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
+                <a href="product.html" class="btn2">Explore ! &#8594;</a>
+                
+            </div>
+
+            <div class="col-4">
+                <img src="images/wrist watch 12.avif " height="420px">
+                <h4>Okudana (890)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$68.00</p>
+                <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
+                <a href="product.html" class="btn2">Explore ! &#8594;</a>
+                
+            </div>
+            
+        </div>
+
+        
+        <div class="row">
+            <div class="col-4">
+                <img src="images/watch-1224379_640.jpg">
+                <h4>Fossil Snow XIV</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    
+                </div>
+                <p>$90.00</p>
+                <a href="productdetails.html" class="btn1"> Explore Now ! &#8594;</a>
+                
+            </div>
+            <div class="col-4">
+                <img src="images/images (29).jpeg">
+                <h4>Bentley 076 red</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                
+                </div>
+                <p>$500,000.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+            <div class="col-4">
+                <img src="images/images (28).jpeg">
+                <h4>Rolls Royce B78 (silver plated)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$900,000.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+            <div class="col-4">
+                <img src="images/wrist watch pro.avif" height="420px" class="img-wan">
+                <h4>Davince 09 (silver plated)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>  
+                </div>
+                <p>$900.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+            
+        </div>
+
+        <!------nexting page part-->
+
+        <div class="page-btn">
+            <span>&#9194;</span>
+            <a href="product.html"><span>1</span></a>
+            <a href="productdetails.html"><span>2</span></a>
+            <a href="product.html"><span>3</span></a>
+            <a href="productdetails.html"><span>4</span></a>
+            <span>&#9193;</span>
+
+        </div>
+
+
+
+
+    </div>
+
+
+    
+
+    <!------ footer ----->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p class="para">Download our app for the best shopping experience.</p>
+                    <div class="app-logo">
+                        <a href=""><img src="images/MyPhoto_10_31_2025_11_40_31_AM.png" with="60px" height="60px"></a>
+                        <p>Download on playstore</p>
+                        <a href=""><img src="images/download.webp" width="70px" height="50px"></a>
+                        <p>Download on app-store</p>
+                    </div>
+
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/BackgroundEraser_20250915_021236834.png" width="120px" height="120px" class="footer-logo-img">
+                    <p class="para">Our purpose is to sustainably make the pleasure and benefits of 
+                        car ownership accessible to the many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post Content</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebok</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Linkedin</li>
+                    </ul>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2025 - Splendor Global</p>
+                <hr>
+                <p class="copyright">Built by SNOW WORKS</p>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!--------JavaScript for toggle menu------>
+
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menuItems.style.maxHeight == "0px")
+            {
+                menuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                menuItems.style.maxHeight = "0px";
+            }
+        }   
+    </script>
+
+    
+
+    
+
+
+    
+</body>
+</html>
