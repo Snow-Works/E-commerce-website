@@ -719,4 +719,14 @@ color: black;
         width: 100%;
     }
 
+    .imgabout img {  
+        height: 350px; 
+        width: 400px;
+         
+    }
+
+    .aboutpara p {
+        color: rgb(102, 63, 12);
+    }
+
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in / Sign Up</title>
+    <title>Splendor Global</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,11 +11,13 @@
 </head>
 
 
-<style>
+        <style>
     @media only screen and (max-width: 1000px) {
         .img-wan {
             height: 520px;
         }
+
+
     }
     
     .slct {
@@ -40,66 +42,99 @@
     
 </style>
 
+
+
+
 <body>
-    
-       <div class="container">
-           <div class="navbar">
-               <div class="logo">
-                 <img src="images/BackgroundEraser_20250915_021236834.png" width="120px" height="120px">
-                </div>
-                <nav>
-                       <ul id="menuItems">
-                           <li><a href="index.html">Home</a></li>
-                           <li><a href="productdetails.html">Product</a></li>
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="contact.html">Contact</a></li>
-                           <li><a href="register.html">Account</a></li>
-                        </ul>
-               </nav>
-               <a href="cart.html"><img src="./images/cart icon 2.webp" width="20px" height="20px"></a>
-               <img src="images/MyPhoto_10_31_2025_1_13_08_PM.png" class="menu-icon" onclick="menutoggle()">
-            </div>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+          <div class="logo">
+              <a href="index.html"><img src="images/BackgroundEraser_20250915_021236834.png" width="120px" height="120px"></a>
+         </div>
+            <nav>
+              <ul id="menuItems">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="product.html">Product</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="register.html">Account</a></li>
+              </ul>
+          </nav>
+          <a href="cart.html"><img src="./images/cart icon 2.webp" width="20px" height="20px"></a>
+          <a href="cart.html"><img src="images/MyPhoto_10_31_2025_1_13_08_PM.png" class="menu-icon" onclick="menutoggle()"></a>
+     </div>
+
+     <div class="row">
+        <div class="col-2">
+            <h1>Give Your Life <br> A New Nature !</h1>
+            <p class="aboutpara">Splendour is not about what you can afford, <br>it's about what solves your problem.</p>
+
+            <a href="product.html" class="btn">Explore Us Now &#8594;</a>
+
         </div>
-
-
-
-
-        <!-----accopunt page-->
-        <div class="account-page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="images/MyPhoto_10_16_2025_2_31_50_PM.png" height="650px" width="700px">
-                    </div>
-
-                    <div class="col-2">
-                        <div class="form-container">
-                            <div class="form-btn"> 
-                                <a href="index.html">Login</a> 
-                                 
-                            </div>
-
-                            <form id="loginForm">
-                                <input type="texts" placeholder="Username">
-                                <input type="password" placeholder="password">
-                                <a href="index.html"><button class="btn">Login</button></a>
-                                <a href="#">Forget Password ?</a>
-
-                            </form>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-2">
+            <img src="images/MyPhoto_10_16_2025_2_31_50_PM.png" height="650px" width="700px" class="imgabout">
             
+
         </div>
+     </div>
+
+    </div>
+
+    </div>
 
 
-        
 
 
 
-    
+    <div>
+
+
+        <div class="row">
+        <div class="col-2">
+            <h1>Slendor Global is your perfect-go-to for car choices and classy lifestyle !<br>
+                <br> A New Nature !</h1>
+            <p>Splendour is not about what you can afford, <br>it's about what solves your problem.</p>
+
+
+            <p>We sell new and recent rides <br>your fit life with trend.</p>
+            <br>
+            <p>We rent out rides <br>your fit life with class and less expense.</p>
+            <br>
+            <p>We replace old car parts <br>refurbish your classiness.</p>
+            <br>
+            <p>We provide car services <br>to keep you on the move.</p>
+            <br>
+            <p>We sell wrist watches <br>your plated wrist watches based on your time value.</p>
+            <br>
+            <p>We sell value <br>your fit life with value and commensurate lifestyle.</p>
+
+            <a href="product.html" class="btn">Explore Us Now &#8594;</a>
+
+        </div>
+        <div class="col-2">
+            <img src="images/MyPhoto_10_16_2025_2_31_50_PM.png" height="50px" width="70px">
+            
+
+        </div>
+     </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!------ footer ----->
 
@@ -150,33 +185,3 @@
 
 
     </div>
-
-
-
-    <!--------JavaScript for toggle menu------>
-
-    <script>
-        var menuItems = document.getElementById("menuItems");
-        menuItems.style.maxHeight = "0px";
-
-        function menutoggle() {
-            if (menuItems.style.maxHeight == "0px")
-            {
-                menuItems.style.maxHeight = "200px";
-            }
-            else
-            {
-                menuItems.style.maxHeight = "0px";
-            }
-        }   
-    </script> 
-
-   
- 
-
-
-
-
-    
-</body>
-</html>
