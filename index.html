@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Splendor Global</title>
+    <link rel="icon"type="image/x-icon" href="images/BackgroundEraser_20250915_021236834.png" media="(prefers-color-scheme: light)"size=" 32x32 " />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -25,22 +27,19 @@
                   <li><a href="register.html">Account</a></li>
               </ul>
           </nav>
-          <a href="cart.html"><img src="./images/cart icon 2.webp" width="20px" height="20px"></a>
-          <a href="cart.html"><img src="images/MyPhoto_10_31_2025_1_13_08_PM.png" class="menu-icon" onclick="menutoggle()"></a>
+          <img src="images/MyPhoto_10_31_2025_1_13_08_PM.png"  class="menu-icon" onclick="menutoggle()" alt="Menu"/>
      </div>
 
      <div class="row">
         <div class="col-2">
-            <h1>Give Your Life <br> A New Nature !</h1>
-            <p>Splendour is not about what you can afford, <br>it's about what solves your problem.</p>
+            <h1>Give Your Life <br> <h1 id="gold">A New Nature !</h1></h1>
+            <p>Splendor is not about what you can afford, <br>it's about what solves your problem.</p>
 
             <a href="product.html" class="btn">Explore Us Now &#8594;</a>
 
         </div>
         <div class="col-2">
             <img src="images/MyPhoto_10_16_2025_2_31_50_PM.png" height="650px" width="700px">
-            
-
         </div>
      </div>
 
@@ -53,7 +52,7 @@
     <div class="categories">
         <div class="small-container">
             <div class="row">
-            <div class="col-3">
+            <div class="col-3" >
                 <img src="images/images (26).jpeg" width="300px" height="350px">
             </div>
             <div class="col-3">
@@ -639,13 +638,13 @@
                 </div>
                 <div class="col-2">
                     <p><strong>EXCLUSIVELY AVAILABLE ON SPLENDOR GLOBAL</strong></p>
-                    <h1>Smart Watch Series 7</h1>
+                    <h1 >Smart Watch Series 7</h1>
                     <small>The future of health is on your wrist. With the new 
                         Smart Watch Series 7, you can monitor your heart rate, 
                         track your sleep, and stay connected like never before. 
                         Its sleek design and advanced features make it the perfect 
                         companion for your active lifestyle. <strong>BEYOUND TIMING, MORE VALUE</strong></small>
-                        <a href="product.html" class="btn">EXPLORE US ! &#8594;</a>
+                        <a href="product.html" class="btn" id="gold">EXPLORE US ! &#8594;</a>
 
 
                 </div>
@@ -662,8 +661,7 @@
                     <i class="fa fa-quote-left"></i>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                         Magnam culpa sit earum autem debitis sapiente nihil ex dolores 
-                        praesentium at sint esse aliquam quibusdam atque accusamus,
-                         doloribus excepturi eligendi sunt!
+                        praesentium at sint esse aliquam
                     </p>
                     <div class="rating">
                         <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
@@ -693,7 +691,7 @@
                         
 
                     </div>
-                    <img src="images/images (32).jpeg"  #id="img-bro">
+                    <img src="images/image (6).jpg"  #id="img-bro">
                     <h3>Snow Works</h3>
                 </div>
                 <div class="col-3">
@@ -711,11 +709,17 @@
                         <i class="fa-solid fa-star-half" style="color: gold; font-size: 16px;"></i>
                         
                     </div>
-                    <img src="images/images (31).jpeg" #id="img-bro">
+                    <img src="images/image (6).jpg" #id="img-bro">
                     <h3>Snow Works</h3>
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <!-----Brands we works with-->
+    <div class="brandswe">
+        <p class="brandswe1">Brands We Work With..</p>
     </div>
 
     <!------ brands-->
@@ -745,77 +749,58 @@
 
     <!------ footer ----->
 
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download our App</h3>
-                    <p class="para">Download our app for the best shopping experience.</p>
-                    <div class="app-logo">
-                        <a href=""><img src="images/MyPhoto_10_31_2025_11_40_31_AM.png" with="60px" height="60px"></a>
-                        <p>Download on playstore</p>
-                        <a href=""><img src="images/download.webp" width="70px" height="50px"></a>
-                        <p>Download on app-store</p>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-head">
+                <div class="footer-content1">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-content2">
+                    <h4>Join Our Community</h4>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Join Now</button>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-mastodon"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
                     </div>
+                </div>
 
-                </div>
-                <div class="footer-col-2">
-                    <img src="images/BackgroundEraser_20250915_021236834.png" width="120px" height="120px" class="footer-logo-img">
-                    <p class="para">Our purpose is to sustainably make the pleasure and benefits of 
-                        car ownership accessible to the many.</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
+                <div class="footer-content3">
+                    <h4>Get Help</h4>
                     <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post Content</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="cart.html">Order Status</a></li>
+                        <li><a href="cart.html">Payment Options</a></li>
                     </ul>
                 </div>
-                <div class="footer-col-4">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>Facebok</li>
-                        <li>Instagram</li>
-                        <li>Twitter</li>
-                        <li>Linkedin</li>
-                    </ul>
-                </div>
-                <hr>
-                <p class="copyright">Copyright 2025 - Splendor Global</p>
-                <hr>
-                <p class="copyright">Built by SNOW WORKS</p>
-
             </div>
         </div>
-    </div>
+ </footer>
+
+    
 
 
 
+
+
+
+    
     <!--------JavaScript for toggle menu------>
 
-    <script>
-        var menuItems = document.getElementById("menuItems");
-        menuItems.style.maxHeight = "0px";
-
-        function menutoggle() {
-            if (menuItems.style.maxHeight == "0px")
-            {
-                menuItems.style.maxHeight = "200px";
-            }
-            else
-            {
-                menuItems.style.maxHeight = "0px";
-            }
-        }   
-    </script>
-
-    
-
-    
-
-
-    
+    <script src="script.js"></script> 
+ 
 </body>
 </html>

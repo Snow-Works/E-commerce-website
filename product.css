@@ -1,0 +1,44 @@
+/* all products page */
+
+.row-2 {
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+
+/* all products details page */
+
+.col-2 {
+  padding-left: 27px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.small-img-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  flex-basis: 24%;
+}
+
+/* page btn under all products page */
+
+.page-btn {
+  margin: 30 auto 60px;
+}
+
+.page-btn span {
+  display: inline-block;
+  border: 1px solid gold;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.page-btn span:hover {
+  background: rgb(107, 2, 30);
+  color: #ffff;
+}

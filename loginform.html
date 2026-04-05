@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping Cart</title>
+    <title>Log in / Sign Up</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -12,7 +12,7 @@
       size=" 32x32 "
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="loginForm.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -61,139 +61,57 @@
         <nav>
           <ul id="menuItems">
             <li><a href="index.html">Home</a></li>
-            <li><a href="productdetails.html">Product</a></li>
+            <li><a href="product.html">Product</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="loginform.html">Account</a></li>
           </ul>
         </nav>
-
         <img
           src="images/MyPhoto_10_31_2025_1_13_08_PM.png"
           class="menu-icon"
           onclick="menutoggle()"
+          alt="Menu"
         />
       </div>
     </div>
 
-    <!------ cart items details---->
+    <!-----account page-->
+    <div class="account-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img
+              src="images/MyPhoto_10_16_2025_2_31_50_PM.png"
+              height="650px"
+              width="700px"
+            />
+          </div>
 
-    <div class="small-container cart-page">
-      <table>
-        <tr>
-          <th>Products</th>
-          <th>Quantity</th>
-          <th>Sub total</th>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img
-                src="images/chevrolet-7842859_640.jpg"
-                height="350px"
-                width="250px"
-              />
-              <div><h4>Plated Cheverolet</h4></div>
-              <small>Price: $960,000.00</small>
-              <br />
+          <div class="col-2">
+            <div class="form-container">
+              <div class="form-btn">
+                <a href="#">Register</a>
+              </div>
 
-              <a href="#"
-                ><br /><button>Remove</button> <br /><button>
-                  Add to cart
-                </button></a
-              >
+              <form id="regForm">
+                <input type="texts" placeholder="First Name" required />
+                <input type="texts" placeholder="Middle Name" required />
+                <input type="texts" placeholder="Last Name" required />
+                <input type="texts" placeholder="Username" required />
+                <input type="password" placeholder="Password" required />
+                <input type="email" placeholder="E-mail" required />
+                <button class="btn" type="submit">
+                  <a href="register.html">Register</a>
+                </button>
+              </form>
             </div>
-          </td>
-          <td><input type="number" placeholder="input Quantity" /></td>
-          <td>$500,000.000</td>
-        </tr>
-
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img
-                src="images/clock-3785587_640.jpg"
-                height="350px"
-                width="250px"
-              />
-              <h4>Silver Cone</h4>
-              <br /><br />
-              <br /><small>Price: $6,000.00</small>
-              <br />
-
-              <a href="#"
-                ><br /><button>Remove</button> <br /><button>
-                  Add to cart
-                </button></a
-              >
-            </div>
-          </td>
-          <td><input type="number" placeholder="input Quantity" /></td>
-          <td>$6,000.000</td>
-        </tr>
-
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="images/images (28).jpeg" height="350px" width="250px" />
-              <h4>Rolls Royce B78 (silver plated)</h4>
-              <br />
-              <small>Price: $900,000.00</small>
-              <br />
-
-              <a href="#"
-                ><br /><button>Remove</button> <br /><button>
-                  Add to cart
-                </button></a
-              >
-            </div>
-          </td>
-          <td><input type="number" placeholder="input Quantity" /></td>
-          <td>$900,000.000</td>
-        </tr>
-
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img
-                src="images/wrist watch pro.avif"
-                height="350px"
-                width="250px"
-              />
-              <h4>Davince 09 (silver plated)</h4>
-              <br />
-              <small>Price: $900.00</small>
-              <br />
-
-              <a href="#"
-                ><br /><button>Remove</button> <br /><button>
-                  Add to cart
-                </button></a
-              >
-            </div>
-          </td>
-          <td><input type="number" placeholder="input Quantity" /></td>
-          <td>$900.000</td>
-        </tr>
-      </table>
-
-      <div class="totalprice">
-        <table>
-          <tr>
-            <td>Subtotal:</td>
-            <td>$:</td>
-          </tr>
-          <tr>
-            <td>Tax: 0.7%</td>
-            <td>Total Tax Cost</td>
-          </tr>
-          <tr>
-            <td>Total:</td>
-            <td>Total Cost</td>
-          </tr>
-        </table>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!------ footer ----->
 
     <!------ footer ----->
     <footer>
@@ -239,6 +157,6 @@
 
     <!--------JavaScript for toggle menu------>
 
-    <script src="cart.js"></script>
+    <script src="productdetails.js"></script>
   </body>
 </html>

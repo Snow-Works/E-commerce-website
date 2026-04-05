@@ -1,83 +1,853 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product INC.</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/BackgroundEraser_20250915_021236834.png"
+      media="(prefers-color-scheme: light)"
+      size=" 32x32 "
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="product.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
 
-
-<style>
+  <style>
     @media only screen and (max-width: 1000px) {
-        .img-wan {
-            height: 520px;
-        }
+      .img-wan {
+        height: 520px;
+      }
     }
-    
+
     .slct {
-        background:rgb(12, 5, 114);
-        color:#fff;
-        border: 1px solid gold;
-        border-radius: 5px;
-        padding: 5px;
+      background: rgb(12, 5, 114);
+      color: #fff;
+      border: 1px solid gold;
+      border-radius: 5px;
+      padding: 5px;
     }
 
     .slct:hover {
-        cursor:pointer;
-        transform:scale(1.05);
-        box-shadow: 3px solid gold;
+      cursor: pointer;
+      transform: scale(1.05);
+      box-shadow: 3px solid gold;
     }
 
     .slct:focus {
-        outline:none;
+      outline: none;
     }
+  </style>
 
-    
-    
-</style>
-
-<body>
-    
-       <div class="container">
-           <div class="navbar">
-               <div class="logo">
-                 <img src="images/BackgroundEraser_20250915_021236834.png" width="120px" height="120px">
-                </div>
-                <nav>
-                       <ul id="menuItems">
-                           <li><a href="index.html">Home</a></li>
-                           <li><a href="product.html">Product</a></li>
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="contact.html">Contact</a></li>
-                           <li><a href="register.html">Account</a></li>
-                        </ul>
-               </nav>
-               <a href="cart.html"><img src="./images/cart icon 2.webp" width="20px" height="20px"></a>
-               <a href="index.html"><img src="images/MyPhoto_10_31_2025_1_13_08_PM.png" class="menu-icon" onclick="menutoggle()"></a>
-            </div>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img
+            src="images/BackgroundEraser_20250915_021236834.png"
+            width="120px"
+            height="120px"
+          />
         </div>
-
-    
-
-   
+        <nav>
+          <ul id="menuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html">Account</a></li>
+          </ul>
+        </nav>
+        <img
+          src="images/MyPhoto_10_31_2025_1_13_08_PM.png"
+          class="menu-icon"
+          onclick="menutoggle()"
+          alt="Menu"
+        />
+      </div>
+    </div>
 
     <!------ featured products----->
-    
+
     <div class="small-container">
-        <div class="row row-2">
-            <h2>Our Products Kinds</h2>
-            <select class="slct">
-                <option>Sorting by </option>
-                <option>sort by price &#9989;</option>
-                <option>Sort by popularity &#9989;</option>
-                <option>sort by sale &#9989;</option>
-            </select>
+      <div class="row row-2">
+        <h2>Our Products Kinds</h2>
+        <select class="slct">
+          <option>Sorting by</option>
+          <option>sort by price &#9989;</option>
+          <option>Sort by popularity &#9989;</option>
+          <option>sort by sale &#9989;</option>
+        </select>
+      </div>
+
+
+
+
+
+
+<!---section for product images-->
+
+
+  <!---first row of cars (car row 1)-->
+
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/ferari2..jpg">
+                <h4>Ferrari 488 interior</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    
+                </div>
+                <p>$90.00</p>
+                <a href="product.html" class="btn1"> Explore Now ! &#8594;</a>
+                
+            </div>
+            <div class="col-4">
+                <img src="images/ferari1.jpg" height="220px">
+                <h4>Ferrari 076 red</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                
+                </div>
+                <p>$34,500.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+            <div class="col-4">
+                <img src="images/ferari1.3.jpg" height="220px">
+                <h4>Rolls Royce B78 (silver plated)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$900,000.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+            <div class="col-4">
+                <img src="images/ferari14.jpg" height="220px" width="220px">
+                <h4>Ferrari (boz890)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>  
+                </div>
+                <p>$700,000.00</p>
+                <a href="productdetails.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+            
         </div>
-         <div class="row">
+
+
+
+        <!---2nd  row of cars (car row 2)-->
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/royce.11.jpg">
+                <h4>Royce 488 interior</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    
+                </div>
+                <p>$90.00</p>
+                <a href="product.html" class="btn1"> Explore Now ! &#8594;</a>
+                
+            </div>
+            <div class="col-4">
+                <img src="images/royce3.jpg" >
+                <h4>Rolls Royce 076 white</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                
+                </div>
+                <p>$24,600.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+            <div class="col-4">
+                <img src="images/royce7.jpg">
+                <h4>Rolls Royce B78 (silver plated)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$900,000.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+            <div class="col-4">
+                <img src="images/royce 1.jpg">
+                <h4>Ferrari boz890</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>  
+                </div>
+                <p>$700,000.00</p>
+                <a href="productdetails.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+            
+        </div>
+
+
+
+
+
+        <!---3rd row of cars (car row 2)-->
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/royce5.jpg">
+                <h4>Rolls Royce </h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    
+                </div>
+                <p>$90,000.00</p>
+                <a href="product.html" class="btn1"> Explore Now ! &#8594;</a>
+                
+            </div>
+            <div class="col-4">
+                <img src="images/royce10.jpg" >
+                <h4>Rolls Royce Black</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                
+                </div>
+                <p>$94,600.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+            <div class="col-4">
+                <img src="images/royce4.jpg">
+                <h4>Rolls Royce Caroline</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$76,000.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+            <div class="col-4">
+                <img src="images/royce.8.jpg" >
+                <h4>Royce Caroline boz890</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>  
+                </div>
+                <p>$78,000.00</p>
+                <a href="productdetails.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+            
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <!---4th row of cars (car row 4)-->
+
+        <h2 class="title"></h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/car 11.avif">
+                <h4>Stone Cold Velvet</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$90.00</p>
+                <a href="product.html" class="btn1">Explore ! &#8594;</a>
+            </div>
+
+            <div class="col-4">
+                <img src="images/car 5.avif" height="420px">
+                <h4>Bentley 076 red</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$500,000.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+            </div>
+
+            <div class="col-4">
+                <img src="images/car 12.avif" height="420px">
+                <h4>Rolls Royce B78 (silver plated)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$900,000.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                 
+            </div>
+
+            <div class="col-4">
+                <img src="images/tank-700-8579016_640.jpg" height="420px">
+                <h4>BMW (boz890)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$700,000.00</p>
+                <a href="productdetails.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+
+            
+
+             <!---5th row of cars (car row 5)-->
+
+
+            <div class="row">
+            <div class="col-4">
+                <img src="images/porshe1.jpg">
+                <h4>ASh Dim Velvet</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$29,000.00</p>
+                <a href="product.html" class="btn1">Explore ! &#8594;</a>
+            </div>
+
+            <div class="col-4">
+                <img src="images/car 6.avif" height="420px">
+                <h4>Bentley 016</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$500,000.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+
+            <div class="col-4">
+                <img src="images/car 9.avif" height="420px">
+                <h4>Bugatti BlueBird B78</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$10,000.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+
+            <div class="col-4">
+                <img src="images/images (29).jpeg"  height="420px">
+                <h4>BMW Red</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$7,000.00</p>
+                <a href="productdetails.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+            
+        </div>
+
+
+
+         <!---4th  row of cars (car row 4)-->
+
+
+
+     
+
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/car 11.avif">
+                <h4>Green Cold Velvet</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$900.00</p>
+                <a href="product.html" class="btn1">Explore ! &#8594;</a>
+            </div>
+
+            <div class="col-4">
+                <img src="images/cars-8891625_640.jpg" height="420px">
+                <h4>Bentley 076 White</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$500,000.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+
+            <div class="col-4">
+                <img src="images/car 2.1 a.avif" height="420px">
+                <h4>Rolls Royce B70 </h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$900,000.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+
+            <div class="col-4">
+                <img src="images/car 55.avif" height="420px">
+                <h4>Bunkloy (890)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$700,000.00</p>
+                <a href="cart.html" class="btn1">Book Now &#8594;</a>
+                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
+                
+            </div>
+            
+        </div>
+
+
+        <!---5th row of cars (car row 5)-->
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/car-1544342_640.jpg">
+                <h4>Cold-red Cheverolet</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$90,000.00</p>
+                <a href="productdetails.html" class="btn1">Explore ! &#8594;</a>
+            </div>
+
+            <div class="col-4">
+                <img src="images/chevrolet-7842859_640.jpg"  height="420px">
+                <h4>Plated Cheverolet</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$960,000.00</p>
+                <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
+                <a href="product.html" class="btn2">Explore ! &#8594;</a>
+            </div>
+
+            <div class="col-4">
+                <img src="images/mahindra-xuv300-5904376_640.jpg" height="420px">
+                <h4>Mahindra V17</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$100,000.00</p>
+                <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
+                <a href="product.html" class="btn2">Explore ! &#8594;</a>
+                
+            </div>
+
+            <div class="col-4">
+                <img src="images/car 32.avif" height="420px">
+                <h4>Baron-XIV</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$70,000.00</p>
+                <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
+                <a href="product.html" class="btn2">Explore ! &#8594;</a>
+                
+            </div>
+
+
+
+            <!---6th row of cars (car row 5)-->
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/carv 12.avif">
+                <h4>white Challete</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$90,000.00</p>
+                <a href="productdetails.html" class="btn1">Explore ! &#8594;</a>
+            </div>
+
+            <div class="col-4">
+                <img src="images/car-7274571_640.jpg"  height="420px">
+                <h4>Plated Chevrolet</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$660,000.00</p>
+                <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
+                <a href="product.html" class="btn2">Explore ! &#8594;</a>
+            </div>
+
+            <div class="col-4">
+                <img src="images/car 4.avif" height="420px">
+                <h4>Mahindra BMW</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$120,000.00</p>
+                <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
+                <a href="product.html" class="btn2">Explore ! &#8594;</a>
+                
+            </div>
+
+            <div class="col-4">
+                <img src="images/cars-8891625_640.jpg" height="420px">
+                <h4>Baron-XIV</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$70,000.00</p>
+                <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
+                <a href="product.html" class="btn2">Explore ! &#8594;</a>
+                
+            </div>
+
+
+
+
+
+
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!---1st row for wrist watches--->
+
+
+        
+        <div class="row">
+            <div class="col-4">
+                <img src="images/watch-8174265_640.jpg">
+                <h4>Stone Cold Velvet</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$290.00</p>
+                <a href="productdetails.html" class="btn1">Explore ! &#8594;</a>
+            </div>
+
+            <div class="col-4">
+                <img src="images/watch-8174270_640.jpg" height="420px">
+                <h4>Bentley 076 red</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$500.86</p>
+                <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
+                <a href="product.html" class="btn2">Explore ! &#8594;</a>
+                
+            </div>
+
+            <div class="col-4">
+                <img src="images/watch-5044921_640.jpg" height="420">
+                <h4>Fossil XXIV</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$900.00</p>
+                <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
+                <a href="product.html" class="btn2">Explore ! &#8594;</a>
+                
+            </div>
+
+            <div class="col-4">
+                <img src="images/chronometer-2157265_640.jpg" height="420px">
+                <h4>Ice-Cone (boz890)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$700.66</p>
+                <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
+                <a href="product.html" class="btn2">Explore ! &#8594;</a>
+                
+            </div>
+            
+        </div>
+
+
+        <!---2nd row for wrist watch-->
+
+
+        
+        <div class="row">
+            <div class="col-4">
+                <img src="images/watch-1224379_640.jpg">
+                <h4>Stone Cold Velvet</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$660.99</p>
+                <a href="productdetails.html" class="btn1">Explore ! &#8594;</a>
+            </div>
+
+            <div class="col-4">
+                <img src="images/wristwatch-235408_640.jpg" height="420px">
+                <h4>Inivicia 13th</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$500.20</p>
+                <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
+                <a href="productdetails.html" class="btn2">Explore ! &#8594;</a>
+                
+            </div>
+
+            <div class="col-4">
+                <img src="images/wrist watch pro.avif" height="420px">
+                <h4>Davince 09 (silver plated)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$900.00</p>
+                <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
+                <a href="productdetails.html" class="btn2">Explore ! &#8594;</a>
+                
+            </div>
+
+            <div class="col-4">
+                <img src="images/watch-7204672_1280.jpg" height="420px">
+                <h4>Biz-XI (boz890)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
+                </div>
+                <p>$700.00</p>
+                <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
+                <a href="product.html" class="btn2">Explore ! &#8594;</a>
+                
+            </div>
+            
+        </div>
+
+
+        <!----Last Row For the wrist watches-->
+
+
+        
+        <div class="row">
             <div class="col-4">
                 <img src="images/watches-73936_640.jpg">
                 <h4>INIVICIA Rollex Pack</h4>
@@ -136,173 +906,91 @@
                 </div>
                 <p>$68.00</p>
                 <a href="cart.html" class="btn1">Buy Mine ! &#8594;</a>
-                <a href="product.html" class="btn2">Explore ! &#8594;</a>
+                <a href="productdetails.html" class="btn2">Explore ! &#8594;</a>
                 
             </div>
             
         </div>
+
+
 
         
-        <div class="row">
-            <div class="col-4">
-                <img src="images/watch-1224379_640.jpg">
-                <h4>Fossil Snow XIV</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    
-                </div>
-                <p>$90.00</p>
-                <a href="productdetails.html" class="btn1"> Explore Now ! &#8594;</a>
-                
-            </div>
-            <div class="col-4">
-                <img src="images/images (29).jpeg">
-                <h4>Bentley 076 red</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                
-                </div>
-                <p>$500,000.00</p>
-                <a href="cart.html" class="btn1">Book Now &#8594;</a>
-                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
-                
-            </div>
-            <div class="col-4">
-                <img src="images/images (28).jpeg">
-                <h4>Rolls Royce B78 (silver plated)</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                </div>
-                <p>$900,000.00</p>
-                <a href="cart.html" class="btn1">Book Now &#8594;</a>
-                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
-                
-            </div>
-            <div class="col-4">
-                <img src="images/wrist watch pro.avif" height="420px" class="img-wan">
-                <h4>Davince 09 (silver plated)</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>
-                    <i class="fa-solid fa-star" style="color: gold; font-size: 16px;"></i>  
-                </div>
-                <p>$900.00</p>
-                <a href="cart.html" class="btn1">Book Now &#8594;</a>
-                <a href="cart.html" class="btn2">Buy Now ! &#8594;</a>
-                
-            </div>
             
-        </div>
-
-        <!------nexting page part-->
-
-        <div class="page-btn">
-            <span>&#9194;</span>
-            <a href="product.html"><span>1</span></a>
-            <a href="productdetails.html"><span>2</span></a>
-            <a href="product.html"><span>3</span></a>
-            <a href="productdetails.html"><span>4</span></a>
-            <span>&#9193;</span>
-
-        </div>
-
-
-
-
+    
     </div>
 
+      
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!------next page part buttons-->
+
+      <div class="page-btn">
+        <span>&#9194;</span>
+        <a href="product.html"><span>1</span></a>
+        <a href="productdetails.html"><span>2</span></a>
+        <a href="product.html"><span>3</span></a>
+        <a href="productdetails.html"><span>4</span></a>
+        <span>&#9193;</span>
+      </div>
+    </div>
 
     <!------ footer ----->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-head">
+          <div class="footer-content1">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Our Services</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Affiliate Program</a></li>
+            </ul>
+          </div>
 
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download our App</h3>
-                    <p class="para">Download our app for the best shopping experience.</p>
-                    <div class="app-logo">
-                        <a href=""><img src="images/MyPhoto_10_31_2025_11_40_31_AM.png" with="60px" height="60px"></a>
-                        <p>Download on playstore</p>
-                        <a href=""><img src="images/download.webp" width="70px" height="50px"></a>
-                        <p>Download on app-store</p>
-                    </div>
+          <div class="footer-content2">
+            <h4>Join Our Community</h4>
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Join Now</button>
 
-                </div>
-                <div class="footer-col-2">
-                    <img src="images/BackgroundEraser_20250915_021236834.png" width="120px" height="120px" class="footer-logo-img">
-                    <p class="para">Our purpose is to sustainably make the pleasure and benefits of 
-                        car ownership accessible to the many.</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post Content</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>Facebok</li>
-                        <li>Instagram</li>
-                        <li>Twitter</li>
-                        <li>Linkedin</li>
-                    </ul>
-                </div>
-                <hr>
-                <p class="copyright">Copyright 2025 - Splendor Global</p>
-                <hr>
-                <p class="copyright">Built by SNOW WORKS</p>
-
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-mastodon"></i></a>
+              <a href="#"><i class="fab fa-discord"></i></a>
             </div>
+          </div>
+
+          <div class="footer-content3">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="cart.html">Order Status</a></li>
+              <li><a href="cart.html">Payment Options</a></li>
+            </ul>
+          </div>
         </div>
-
-
-    </div>
-
-
+      </div>
+    </footer>
 
     <!--------JavaScript for toggle menu------>
 
-    <script>
-        var menuItems = document.getElementById("menuItems");
-        menuItems.style.maxHeight = "0px";
-
-        function menutoggle() {
-            if (menuItems.style.maxHeight == "0px")
-            {
-                menuItems.style.maxHeight = "200px";
-            }
-            else
-            {
-                menuItems.style.maxHeight = "0px";
-            }
-        }   
-    </script>
-
-    
-
-    
-
-
-    
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
